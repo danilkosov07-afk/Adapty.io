@@ -3,35 +3,45 @@ const HeroSection = () => {
     <section className="hero">
       <div className="container hero__inner">
         <div className="hero__content">
-          <p className="hero__badge">Гайд «Как вырасти до $100K»</p>
+          <p className="hero__badge">
+            <span className="hero__badge-label">Гайд</span>
+            <span className="hero__badge-link">
+              Как вырасти до $100K | Скачать
+            </span>
+          </p>
           <h1 className="hero__title">
-            Платформа для роста
+            Платформа
             <br />
-            мобильных приложений
+            для роста
+            <br />
+            мобильных
+            <br />
+            приложений
           </h1>
           <p className="hero__subtitle">
             Сэкономьте месяцы на внедрении подписок и удвойте доход от
-            приложения благодаря эффективному управлению пейволлами.
+            приложения благодаря
+            <br />
+            эффективному управлению пейволлами.
           </p>
-          <div className="hero__actions">
-            <button className="btn btn-primary">Начать бесплатно</button>
-            <button className="btn btn-secondary">Записаться на демо</button>
-          </div>
-          <p className="hero__trust">
-            Доверяют более 15,000+ приложений и крупнейших мировых издателей
-            приложений
-          </p>
-        </div>
-        <div className="hero__visual">
-          <div className="hero-card hero-card--primary">
-            <h3>Adapty Paywall Demo</h3>
-            <p>Управляйте пейволлами и подписками без релизов приложения.</p>
-          </div>
-          <div className="hero-card hero-card--secondary">
-            <h3>Adapty Overview</h3>
-            <p>Аналитика, A/B‑тесты и управление подписками в одном месте.</p>
+          <div className="hero__form">
+            <div className="hero__input-wrap">
+              <input
+                type="email"
+                className="hero__input"
+                placeholder="Email адрес"
+              />
+              <button className="btn hero__start-btn">Начать</button>
+            </div>
+            <button className="hero__demo-link" type="button">
+              Запись на демо
+            </button>
           </div>
         </div>
+        <p className="hero__trust">
+          Доверяют более 15,000+ приложений и крупнейших мировых издателей
+          приложений
+        </p>
       </div>
     </section>
   );

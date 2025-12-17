@@ -2,36 +2,34 @@ const PaywallSection = () => {
   return (
     <section className="paywall">
       <div className="container paywall__inner">
-        <div className="paywall__content">
-          <h2 className="section-title">
-            Тестируйте пейволлы
-            <br />
-            без релизов приложения
-          </h2>
-          <p className="section-subtitle">
-            Управляйте пейволлами, таргетируйте их, локализуйте и
-            персонализируйте не выходя из браузера.
-          </p>
-          <ul className="paywall__list">
-            <li>A/B‑тестирование пейволлов</li>
-            <li>Конструктор без кода</li>
-            <li>Локализации и таргетинг</li>
-          </ul>
-        </div>
-        <div className="paywall__preview">
-          <div className="paywall-card">
-            <div className="paywall-card__header">
-              <span>Paywall A/B testing</span>
-              <span className="paywall-card__tag">Live</span>
-            </div>
-            <div className="paywall-card__body">
-              <p>Сократите ставку возврата на 40%</p>
-              <p className="paywall-card__meta">
-                Перестаньте терять доход из‑за возвратов — Adapty помогает
-                находить и сохранять рискованные подписки.
-              </p>
-            </div>
+        <div className="paywall__left">
+          <div className="paywall__text">
+            <h2 className="section-title">
+              Тестируйте пейволлы без
+              <br />
+              релизов приложения
+            </h2>
+            <p className="section-subtitle">
+              Управляйте пейволлами, таргетируйте их, локализуйте и
+              персонализируйте не выходя из браузера.
+            </p>
+            <button className="paywall__link" type="button">
+              Больше про A/B‑тесты
+            </button>
           </div>
+          <article className="paywall__quote">
+            <p className="paywall__quote-text">
+              «Будь то A/B‑тестирование пейволлов, прогнозирование LTV или
+              анализ показателей подписки, Adapty — идеальный набор
+              инструментов для роста приложения».
+            </p>
+            <p className="paywall__quote-author">
+              Ильгар Тали, основатель и директор по позиционированию
+            </p>
+          </article>
+        </div>
+        <div className="paywall__right">
+          <div className="paywall__mock" aria-hidden="true" />
         </div>
       </div>
     </section>
